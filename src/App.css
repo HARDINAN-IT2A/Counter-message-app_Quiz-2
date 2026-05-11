@@ -1,0 +1,87 @@
+/* App.css */
+
+/* Color background */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+    /* Glass-style container */
+.app-container {
+  max-width: 400px;
+  width: 90%;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.tally-display {
+  font-size: 4rem;
+  color: #2c3e50;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+
+
+.btn {
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-add { background-color: #4facfe; color: white; }
+.btn-sub { background-color: #00f2fe; color: #333; }
+.btn-reset { background-color: #ff9a9e; color: white; }
+
+/* Styles for the "Goal Reached!" message [1] */
+.goal-message {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: 1px solid #c3e6cb;
+  animation: fadeIn 0.5s ease-in;
+}
+
+  /* Styles for the Input field requirement [1] */
+.input-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 20px 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
